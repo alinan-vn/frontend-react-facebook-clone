@@ -19,7 +19,7 @@ function App() {
         <Navigation />
         <Sidebar />
 
-        <Router exact path='/' component={Home} />
+        <Route exact path='/' component={Home} />
 
         <Footer />
       </BrowserRouter>

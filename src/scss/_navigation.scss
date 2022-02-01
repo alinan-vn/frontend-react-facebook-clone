@@ -1,0 +1,16 @@
+.nav {
+    display: flex;
+    background-color: $nav_background-color;
+
+    &_left {
+        margin-left: 1%;
+    }
+
+    &_middle {
+        margin-left: 33%;
+    }
+
+    &_right {
+        margin-left: 30vw;
+    }
+}
