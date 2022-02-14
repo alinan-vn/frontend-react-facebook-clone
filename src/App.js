@@ -20,6 +20,19 @@ function App() {
       
       <BrowserRouter>
         <Navigation />
+        <div className='container-liquid'>
+          <div className='row'>
+            <div className='col'>
+              <Sidebar />  
+            </div>
+            <div className='col'>
+              <Route exact path='/' component={Home} />
+            </div>
+            <div className='col'>
+              <Footer />
+            </div>
+          </div>
+        </div>
         {/* <Sidebar /> */}
 
         {/* <Route exact path='/' component={Home} /> */}

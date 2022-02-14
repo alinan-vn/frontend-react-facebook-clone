@@ -1,0 +1,19 @@
+@import './variables';
+
+.sidebar-fcus{
+    background-color: $sidebar-fcus_background-color;
+
+    &_item{
+        display: flex;
+        padding: 2vh 0 0 0;
+
+        &-icon{
+            color: $sidebar-fcus_icon-color;
+        }
+
+        &-text{
+            padding: 0 0 0 1vw;
+            color: $sidebar-fcus_text-color;
+        }
+    }
+}
