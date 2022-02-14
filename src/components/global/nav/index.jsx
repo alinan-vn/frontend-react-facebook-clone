@@ -1,34 +1,40 @@
 import React from 'react';
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+// import { FontAwesomeIcon } from '@fortawesome/fontawesome-svg-core'
+import { faCoffee } from '@fortawesome/free-solid-svg-icons'
+
 class Navigation extends React.Component {
 
     render(){
         return(
-            <div>
-                <div className='nav'>
-                    <div className='nav_left'>
-                        <a className='nav_logo nav_left-item'>F</a>
+            <div className="container-liquid nav-fcus">
+                <div class="row">
+                    <div className="col">
+                        <a className='nav-fcus_left-logo'>F</a>
+
+                        {/* <FontAwesomeIcon icon="fa-brands fa-facebook" /> */}
+                        <FontAwesomeIcon icon={faCoffee} />
+
                         <input 
-                            className='nav_left-item nav_left-search' 
+                            className='nav-fcus_left-search' 
                             type="text" 
                             placeholder='Search Facebook'
                         />
                     </div>
-
-                    <div className='nav_middle'>
-                        <a className='nav_middle-item'>H</a>   {/* Push, Home */}
-                        <a className='nav_middle-item'>C</a>   {/* Connect */}
-                        <a className='nav_middle-item'>V</a>   {/* View */}
-                        <a className='nav_middle-item'>M</a>   {/* Marketplace */}
-                        <a className='nav_middle-item'>G</a>   {/* Gaming */}
+                    <div className="col">
+                        <a className=''>H</a>   {/* Push, Home */}
+                        <a className=''>C</a>   {/* Connect */}
+                        <a className=''>V</a>   {/* View */}
+                        <a className=''>M</a>   {/* Marketplace */}
+                        <a className=''>G</a>   {/* Gaming */}
                     </div>
-
-                    <div className='nav_right'>
-                        <a className='nav_right-item'>Me</a>              {/* Push, Profile */}
-                        <a className='nav_right-item'>Menu</a>
-                        <a className='nav_right-item'>Messenger</a>
-                        <a className='nav_right-item'>Notifications</a>
-                        <a className='nav_right-item'>Account</a>
+                    <div className="col">
+                        <a className=''>Me</a>              {/* Push, Profile */}
+                        <a className=''>Menu</a>
+                        <a className=''>Messenger</a>
+                        <a className=''>Notifications</a>
+                        <a className=''>Account</a>
                     </div>
                 </div>
             </div>

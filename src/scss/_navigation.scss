@@ -1,40 +1,22 @@
 @import './variables';
 
-.nav {
-    display: flex;
+.nav-fcus {
+    // display: flex;
     background-color: $nav_background-color;
-    height: 7vh;
-    padding-top: 1vh;
+    height: 8vh;
 
     &_left {
-        margin-left: 1%;
 
-        &-item{
-            padding: 1vw;
+        &-logo{
+            padding-left: 2vw;
         }
 
         &-search{
             border-radius: 2.5rem;
-            height: .7vh;
+            margin: 2vh 0 0 2vw;
+            padding: 0 0 0 1vw;
             background-color: $nav_left-search-background-color;
         }
     }
-
-    &_middle {
-        margin-left: 25%;
-        padding-top: 1vh;
-
-        &-item{
-            padding: 1vw;
-        }
-    }
-
-    &_right {
-        margin-left: 15%;
-        padding-top: 1vh;
-
-        &-item{
-            padding: 0.5vw;
-        }
-    }
 }
+
