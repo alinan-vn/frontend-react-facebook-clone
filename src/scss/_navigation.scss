@@ -2,20 +2,37 @@
 
 .nav-fcus {
     // display: flex;
-    background-color: $nav_background-color;
+    background-color: $nav-fcus_background-color;
     height: 8vh;
 
     &_left {
 
         &-logo{
             padding-left: 2vw;
+            color: $nav-fcus_icon-color;
         }
 
         &-search{
             border-radius: 2.5rem;
             margin: 2vh 0 0 2vw;
             padding: 0 0 0 1vw;
-            background-color: $nav_left-search-background-color;
+            background-color: $nav-fcus_left-search-background-color;
+        }
+    }
+
+    &_middle{
+
+        &-icon{
+            color: $nav-fcus_icon-color;
+            padding: 2vh 0 0 2vw;
+        }
+    }
+
+    &_right{
+
+        &-icon{
+            color: $nav-fcus_icon-color;
+            padding: 2vh 0 0 2vw;
         }
     }
 }
