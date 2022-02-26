@@ -1,0 +1,27 @@
+.home-fcus{
+
+    &_create-story{
+        display: flex;        
+        border: white;
+        border-style: dashed;
+
+        &_icon{
+            color: #2581d6;
+            padding: 1vh 0 0 1vw;
+        }
+
+        &_text{
+
+            &-top{
+                color: white;    
+                padding: 1vh 0 0 2vw;
+            }
+
+            &-bottom{
+                color: white;
+                padding: 0 0 0 2vw;
+                margin: -2vh 0 0 0;
+            }
+        }
+    }
+}
