@@ -2,12 +2,14 @@
 
     &_create-story{
         display: flex;        
-        border: white;
-        border-style: dashed;
+        background-color: $home-fcus_create-story_div-background;
+        border-radius: .8rem;
+        margin: 2vh 0 0 0;
+        padding: 0 0 1vh 0;
 
         &_icon{
             color: #2581d6;
-            padding: 1vh 0 0 1vw;
+            padding: 1.5vh 0 0 2vw;
         }
 
         &_text{
@@ -21,6 +23,50 @@
                 color: white;
                 padding: 0 0 0 2vw;
                 margin: -2vh 0 0 0;
+            }
+        }
+    }
+
+    &_whats-on-your-mind{
+        background-color: $home-fcus_create-story_div-background;
+        border-radius: 0.8rem;
+        margin: 2vh 0 0 0;
+        padding: 2vh 0 0vh 0;
+
+        &_top{
+            display: flex;
+
+            &_icon{
+                color: #aaaaaa;
+                padding: 1vh 0 0 2vw;
+            }
+
+            &_input{
+                border-radius: 2.5rem;
+                width: 80%;
+                margin: 0.5vh 0 0 1vw;
+                padding: .7vh 0 .7vh 1vw;
+                background-color: aqua;
+            }
+        }
+
+        &_mid-hr{
+            color: white;
+            width: 80%;
+            margin-left: 10%;
+        }
+
+        &_bottom{
+            display: flex;
+            
+            &_icon{
+                color: #2581d6;
+                padding: 1.5vh 0.5vw 0 2vw;
+            }
+
+            & > p{
+                color: white;
+                padding: 2vh 0 0 0;
             }
         }
     }
