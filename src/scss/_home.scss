@@ -95,4 +95,24 @@
             padding: 1.2vh 2vw 0 1vw;
         }
     }
+
+    .home-fcus_people-you-may-know{
+        background-color: $home-fcus_create-story_div-background;
+        border-radius: 0.8rem;
+        margin: 2vh 0 0 0;
+        padding: 2vh 0 2vh 1vw;
+
+        &_text{
+            color: $home-fcus_create-story_div-text;
+            padding: 1.2vh 2vw 0 1vw;
+        }
+
+        &_cards{ // edit later when cards are actually added
+            color: $home-fcus_create-story_div-text;
+            padding: 1.2vh 2vw 0 1vw;
+        }
+    }
+
+
+
 }

@@ -83,8 +83,13 @@ class Home extends React.Component {
                     </button>
                 </div>
 
-                <div>
-                    People you may know
+                <div className='home-fcus_people-you-may-know'>
+                    <p className='home-fcus_people-you-may-know_text'>
+                        People you may know
+                    </p>
+                    <div className='home-fcus_people-you-may-know_cards'>
+                        Cards (will be implemented later)
+                    </div>
                 </div>
 
                 <div>
