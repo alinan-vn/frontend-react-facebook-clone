@@ -96,7 +96,7 @@
         }
     }
 
-    .home-fcus_people-you-may-know{
+    &_people-you-may-know{
         background-color: $home-fcus_create-story_div-background;
         border-radius: 0.8rem;
         margin: 2vh 0 0 0;
@@ -113,6 +113,21 @@
         }
     }
 
+    &_feed{
+        background-color: $home-fcus_create-story_div-background;
+        border-radius: 0.8rem;
+        margin: 2vh 0 0 0;
+        padding: 2vh 0 2vh 1vw;
 
+        &_title{
+            color: $home-fcus_create-story_div-text;
+            padding: 1.2vh 2vw 0 1vw;
+        }
+
+        &_cards{
+            color: $home-fcus_create-story_div-text;
+            padding: 1.2vh 2vw 0 1vw;
+        }
+    }
 
 }

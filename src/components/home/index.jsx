@@ -92,8 +92,13 @@ class Home extends React.Component {
                     </div>
                 </div>
 
-                <div>
-                    Post Feed
+                <div className='home-fcus_feed'>
+                    <p className='home-fcus_feed_title'>
+                        Feed
+                    </p>
+                    <div className='home-fcus_feed_cards'>
+                        Cards/Feed (will be implemented later)
+                    </div>
                 </div>
             </div>
         )
