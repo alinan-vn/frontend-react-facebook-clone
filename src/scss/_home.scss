@@ -15,12 +15,12 @@
         &_text{
 
             &-top{
-                color: white;    
+                color: $home-fcus_create-story_div-text;    
                 padding: 1vh 0 0 2vw;
             }
 
             &-bottom{
-                color: white;
+                color: $home-fcus_create-story_div-text;
                 padding: 0 0 0 2vw;
                 margin: -2vh 0 0 0;
             }
@@ -51,7 +51,7 @@
         }
 
         &_mid-hr{
-            color: white;
+            color: $home-fcus_create-story_div-text;
             width: 80%;
             margin-left: 10%;
         }
@@ -60,14 +60,39 @@
             display: flex;
             
             &_icon{
-                color: #2581d6;
+                color: $home-fcus_create-story_icon_general;
                 padding: 1.5vh 0.5vw 0 2vw;
             }
 
             & > p{
-                color: white;
+                color: $home-fcus_create-story_div-text;
                 padding: 2vh 0 0 0;
             }
+        }
+    }
+
+    &_create-room{
+        background-color: $home-fcus_create-story_div-background;
+        border-radius: 0.8rem;
+        margin: 2vh 0 0 0;
+        padding: 2vh 0 2vh 1vw;
+
+        &_btn {
+            display: flex;
+            border-radius: 4rem;
+            border-width: 0.18rem;
+            border-color: $home-fcus_create-story_create-room-btn-border;
+            background-color: $home-fcus_create-story_div-background;
+        }
+
+        &_icon{
+            color: $home-fcus_create-story_icon_general;
+            padding: 1vh 0 0 2vw;
+        }
+
+        &_text{
+            color: $home-fcus_create-story_div-text;
+            padding: 1.2vh 2vw 0 1vw;
         }
     }
 }

@@ -71,8 +71,16 @@ class Home extends React.Component {
                     </div>
                 </div>
 
-                <div>
-                    Create Room
+                <div className='home-fcus_create-room'>
+                    <button className='home-fcus_create-room_btn'>
+                        <FontAwesomeIcon 
+                            className='home-fcus_create-room_icon' 
+                            icon={faVideo} size="2x" 
+                        />
+                        <p className='home-fcus_create-room_text'>
+                            Create Room
+                        </p>
+                    </button>
                 </div>
 
                 <div>

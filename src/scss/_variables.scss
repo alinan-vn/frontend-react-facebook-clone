@@ -1,9 +1,22 @@
+
+// nav variables
 $nav-fcus_background-color: #18191A;
 $nav-fcus_left-search-background-color: #353535;
 $nav-fcus_icon-color: white;
 
-// $sidebar-fcus_background-color: #2e2f38; // not needed in scss sheet, used in public/index.html for the default setting  
+
+// sidebar variables
 $sidebar-fcus_icon-color: white;
 $sidebar-fcus_text-color: white;
+// $sidebar-fcus_background-color: #2e2f38; // not needed in scss sheet, used in public/index.html for the default setting  
 
+
+// home variables
 $home-fcus_create-story_div-background: #18191A;
+$home-fcus_create-story_div-text: white;
+$home-fcus_create-story_icon_general: #2581d6;
+// implement later?
+// $home-fcus_create-story_icon_live-video: red;
+// $home-fcus_create-story_icon_photo-video: green;
+// $home-fcus_create-story_icon_feeling-activity: yellow;
+$home-fcus_create-story_create-room-btn-border: #2581d6;
