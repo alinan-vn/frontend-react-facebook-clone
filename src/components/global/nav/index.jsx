@@ -1,7 +1,19 @@
 import React from 'react';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faF, faHouse, faUserGroup, faTv, faShop, faGamepad, faUser, faBars, faMessage, faBell, faCaretDown } from '@fortawesome/free-solid-svg-icons'
+import { 
+    faF, 
+    faHouse, 
+    faUserGroup, 
+    faTv, 
+    faShop, 
+    faGamepad, 
+    faUser, 
+    faBars, 
+    faMessage, 
+    faBell, 
+    faCaretDown 
+} from '@fortawesome/free-solid-svg-icons';
 
 class Navigation extends React.Component {
 

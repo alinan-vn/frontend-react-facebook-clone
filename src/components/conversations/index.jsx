@@ -1,5 +1,8 @@
 import React from 'react';
 
+import Contacts from './contacts/index';
+import { contacts } from '../../data/contacts'
+
 import { 
     faUser,
     faVideo,
@@ -18,7 +21,7 @@ class ConversationsSidebar extends React.Component{
                         Contacts
                     </p>
                     <div className='conversation-sidebar_contacts_cards'>
-                        Contacts Cards
+                        <Contacts contacts={contacts} />
                     </div>
                 </div>
                 <hr className='conversation-sidebar_hr-divider' />

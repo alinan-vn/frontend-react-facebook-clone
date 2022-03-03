@@ -17,6 +17,20 @@
             color: $home-fcus_create-story_div-text;    
             padding: 1vh 0 0 0vw;
         }
+
+        &_card{
+            display: flex;
+            padding-bottom: 1.5vh;
+
+            &_icon{
+                padding-right: 1vw;
+                height: 3vh;
+            }
+
+            &_text{
+                font-size: 1.1rem;
+            }
+        }
     }
 
     &_group-conversations{
