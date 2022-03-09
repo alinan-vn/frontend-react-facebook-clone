@@ -11,6 +11,7 @@ import Sidebar from './components/global/sidebar/index';
 import Home from './components/home/index';
 import ConversationsSidebar from './components/conversations/index';
 import Footer from './components/global/footer/index';
+import Messenger from './components/conversations/messenger';
 
 
 
@@ -24,17 +25,24 @@ function App() {
         <Navigation />
 
         <div className='container-liquid'>
+
           <div className='row'>
+
             <div className='col'>
               <Sidebar />  
             </div>
+
             <div className='col'>
               <Route exact path='/' component={Home} />
+              <Route exact path='/messenger/:id' component={Messenger} />
             </div>
+
             <div className='col'>
-              <Route exact path='/' component={ConversationsSidebar} />
+              <ConversationsSidebar />
             </div>
+
           </div>
+          
         </div>
 
         <Footer />

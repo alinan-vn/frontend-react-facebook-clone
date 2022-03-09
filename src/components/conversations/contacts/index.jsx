@@ -6,21 +6,29 @@ import {
     faUser
 } from '@fortawesome/free-solid-svg-icons';
 
+function goToMessenger(id){
+    window.location.href = `http://localhost:3000/messenger/${id}`
+}
+
 function Contacts(props){
     
     let contacts = props.contacts;
     let contactCards = [];
 
     contacts.forEach(contact => {
+        let firstName = contact.firstName
+        let lastName = contact.lastName
 
         let contactCard = 
-            <div className='conversation-sidebar_contacts_card'>
+            <div 
+                onClick={() => goToMessenger(contact.id)} 
+                className='conversation-sidebar_contacts_card'>
                 <FontAwesomeIcon 
                     className='conversation-sidebar_contacts_card_icon' 
                     icon={faUser} 
                 />
                 <p className='conversation-sidebar_contacts_card_text'>
-                    {contact.firstName} {contact.lastName}
+                    {firstName} {lastName}
                 </p>
             </div>
         

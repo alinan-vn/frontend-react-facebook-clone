@@ -27,10 +27,10 @@ class ConversationsSidebar extends React.Component{
                 <hr className='conversation-sidebar_hr-divider' />
                 <div className='conversation-sidebar_group-conversations'>
                     <p className='conversation-sidebar_group-conversations_text'>
-                        Group Conversations
+                        {/* Conversation */}
                     </p>
                     <div className='conversation-sidebar_group-conversations_cards'>
-                        Group Conversation Cards
+                        {/* Group Conversation Cards */}
                     </div>
                 </div>
             </div>
