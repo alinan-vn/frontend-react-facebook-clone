@@ -15,6 +15,20 @@ function Contacts(props){
     let contacts = props.contacts;
     let contactCards = [];
 
+    contactCards.push(
+        <div 
+                onClick={() => goToMessenger("cat")} 
+                className='conversation-sidebar_contacts_card'>
+                <FontAwesomeIcon 
+                    className='conversation-sidebar_contacts_card_icon' 
+                    icon={faUser} 
+                />
+                <p className='conversation-sidebar_contacts_card_text'>
+                    Cat Fact
+                </p>
+            </div>
+    )
+
     contacts.forEach(contact => {
         let firstName = contact.firstName
         let lastName = contact.lastName

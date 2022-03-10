@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { contacts } from '../../../data/contacts'
+import { contacts, apiDetails } from '../../../data/contacts'
 
 import { catFactsGetCall } from '../../../apiCalls/catFacts/index'
 
@@ -22,7 +22,30 @@ class Messenger extends React.Component {
         return fetch("https://catfact.ninja/fact")
         .then(r => r.json())
         .then(data => {
-            return `<p>${data.catFact}</p>`
+            console.log('getching', data)
+            this.updateStateWithCatFact(data.fact)
+        })
+    }
+
+    updateStateWithCatFact = fact => {
+        let factDiv = <div className='messenger-fcus_messages_message-received'>
+            <FontAwesomeIcon 
+                className='messenger-fcus_messages_message-received_icon' 
+                icon={faUser} 
+            />
+            <p 
+                className='messenger-fcus_messages_message-received_text'
+            >
+                { fact }
+            </p>
+        </div> 
+
+        let stateSetMessages = this.state.setMessages
+        stateSetMessages.push(factDiv)
+        
+        this.setState({
+            ...this.state,
+            setMessages: stateSetMessages
         })
     }
 
@@ -71,14 +94,21 @@ class Messenger extends React.Component {
         const lengthOfAddressArrayMinusOne = splitWebAddress.length - 1;
         const userId = splitWebAddress[lengthOfAddressArrayMinusOne];
     
-        contacts.forEach(contact => {
-            if(contact.id == userId){
-                this.setState({
-                    ...this.state,
-                    user: contact
-                })
-            }
-        })        
+        if(userId == "cat"){
+            this.setState({
+                ...this.state,
+                user: apiDetails[0] // hard coded since there is only one working api :/
+            })
+        } else{
+            contacts.forEach(contact => {
+                if(contact.id == userId){
+                    this.setState({
+                        ...this.state,
+                        user: contact
+                    })
+                }
+            })
+        }
     }
 
     sendMessage = e => {
@@ -102,7 +132,18 @@ class Messenger extends React.Component {
         })
 
         e.target.children[0].value = ''
+        this.receiveAMessage()
         this.scrollToBottomOfMessages()
+    }
+
+    receiveAMessage = () => {
+        let splitWebAddress = window.location.href.split('/')
+        const lengthOfAddressArrayMinusOne = splitWebAddress.length - 1;
+        const userId = splitWebAddress[lengthOfAddressArrayMinusOne];
+
+        if(userId == "cat"){
+            this.getFact()
+        }
     }
 
     scrollToBottomOfMessages = () => {

@@ -54,3 +54,35 @@ export const contacts = [
         gender: "other"
     }
 ]
+
+export const apiDetails = [
+    {
+        id: 1,
+        firstName: "Cat",
+        lastName: "Facts",
+        link: "https://catfact.ninja/fact",
+        description: "Gives a cat fact",
+        source: ""
+    },
+    // {
+    //     id: 2,
+    //     name: "Dog Facts",
+    //     link: "",
+    //     description: "",
+    //     source: "" 
+    // },
+    // {
+    //     id: 3,
+    //     name: "",
+    //     link: "",
+    //     description: "",
+    //     source: ""
+    // },
+    // {
+    //     id: 4,
+    //     name: "",
+    //     link: "",
+    //     description: "",
+    //     source: ""
+    // },
+]
