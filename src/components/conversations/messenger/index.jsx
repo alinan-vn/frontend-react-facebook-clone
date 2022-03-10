@@ -13,8 +13,8 @@ class Messenger extends React.Component {
     constructor(){
         super()
         this.state = {
-            user: {},
-            setMessages: []
+            // user: {}, // not needed for our ternary (otherwise if not commented out, will cause 'undefined')
+            // setMessages: [] // same comment as above (leave use and setMessages commented out, perhaps remove altogher later)
         }
     }
 

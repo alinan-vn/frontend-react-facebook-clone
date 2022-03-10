@@ -25,10 +25,13 @@
             &_icon{
                 padding-right: 1vw;
                 height: 3vh;
+                cursor: pointer;
+
             }
 
             &_text{
                 font-size: 1.1rem;
+                cursor: pointer;
             }
         }
     }
