@@ -13,8 +13,8 @@ class Messenger extends React.Component {
     constructor(){
         super()
         this.state = {
-            // user: {},
-            // setMessages: []
+            user: {},
+            setMessages: []
         }
     }
 
@@ -81,6 +81,35 @@ class Messenger extends React.Component {
         })        
     }
 
+    sendMessage = e => {
+        e.preventDefault()
+        
+        let message = e.target.children[0].value
+        let divMessage = <div className='messenger-fcus_messages_message-sent'>
+            <p 
+                className='messenger-fcus_messages_message-sent_text'
+            >
+                {message}
+            </p>
+        </div>
+
+        let newMessageArray = this.state.setMessages
+        newMessageArray.push(divMessage)
+
+        this.setState({
+            ...this.state,
+            setMessages: newMessageArray
+        })
+
+        e.target.children[0].value = ''
+        this.scrollToBottomOfMessages()
+    }
+
+    scrollToBottomOfMessages = () => {
+        let sample = document.getElementById('messages-main-div')
+        sample.scrollTop = sample.scrollHeight 
+    }
+
     componentDidMount(){
         this.setUserToState();
         this.addRandomMessages();
@@ -102,17 +131,27 @@ class Messenger extends React.Component {
                     </p>
                 </div>
 
-                <div className='messenger-fcus_messages'>
+                <div 
+                    id='messages-main-div' 
+                    className='messenger-fcus_messages'
+                >
                     { this.state.setMessages ? this.state.setMessages : "loading"}
                 </div>
 
-                <div className='messenger-fcus_input-div'>
+                <form 
+                    onSubmit={(e) => this.sendMessage(e)} 
+                    className='messenger-fcus_input-div'
+                >
                     <input 
                         className='messenger-fcus_input-div_input-box'
                         placeholder='Aa'
                     />
-                    <button className='messenger-fcus_input-div_button'>Send!</button>
-                </div>
+                    <button 
+                        className='messenger-fcus_input-div_button'
+                    >
+                        Send!
+                    </button>
+                </form>
 
             </div>
         )
