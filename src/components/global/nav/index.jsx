@@ -17,12 +17,20 @@ import {
 
 class Navigation extends React.Component {
 
+    goHome = () => {
+        window.location.href = 'http://localhost:3000/'
+    }
+
     render(){
         return(
             <div className="container-liquid nav-fcus">
                 <div class="row">
                     <div className="col">
-                        <FontAwesomeIcon className='nav-fcus_left-logo' icon={faF} />
+                        <FontAwesomeIcon 
+                            className='nav-fcus_left-logo' 
+                            icon={faF}
+                            onClick={this.goHome}
+                        />
 
                         <input 
                             className='nav-fcus_left-search' 
@@ -31,11 +39,32 @@ class Navigation extends React.Component {
                         />
                     </div>
                     <div className="col">
-                        <FontAwesomeIcon className='nav-fcus_middle-icon' icon={faHouse} size="2x" />
-                        <FontAwesomeIcon className='nav-fcus_middle-icon' icon={faUserGroup} size="2x" />
-                        <FontAwesomeIcon className='nav-fcus_middle-icon' icon={faTv} size="2x" />
-                        <FontAwesomeIcon className='nav-fcus_middle-icon' icon={faShop} size="2x" />
-                        <FontAwesomeIcon className='nav-fcus_middle-icon' icon={faGamepad} size="2x" />
+                        <FontAwesomeIcon 
+                            className='nav-fcus_middle-icon' 
+                            icon={faHouse} 
+                            size="2x" 
+                            onClick={this.goHome}
+                        />
+                        <FontAwesomeIcon 
+                            className='nav-fcus_middle-icon' 
+                            icon={faUserGroup} 
+                            size="2x" 
+                        />
+                        <FontAwesomeIcon 
+                            className='nav-fcus_middle-icon' 
+                            icon={faTv} 
+                            size="2x" 
+                        />
+                        <FontAwesomeIcon 
+                            className='nav-fcus_middle-icon' 
+                            icon={faShop} 
+                            size="2x"
+                        />
+                        <FontAwesomeIcon 
+                            className='nav-fcus_middle-icon' 
+                            icon={faGamepad} 
+                            size="2x"
+                        />
                         
                     </div>
                     <div className="col">
