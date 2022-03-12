@@ -1,0 +1,33 @@
+.people-you-may-know{
+    display: flex;
+
+    &_card{
+        border-color: white;
+        border-style: outset;
+        border-radius: 1rem;
+        border-width: 2px;
+        margin-right: 1vw;
+
+        &_image{
+            width: 10vw;
+            height: auto;
+            border-top-left-radius: 1rem;
+            border-top-right-radius: 1rem;
+        }
+
+        &_text{
+            color: white;
+            padding: 2vh 0 2vh 1vw;
+        }
+
+        &_button{
+            background-color: #5252c9;
+            color: #0000c5;
+            width: 90%;
+            border-radius: 1rem;
+            border-style: none;
+            margin: 0 0 5% 5%;
+            padding: 1vh 0 1vh 0;
+        }
+    }
+}

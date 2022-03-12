@@ -17,6 +17,7 @@ function Contacts(props){
 
     contactCards.push(
         <div 
+                key='cat'
                 onClick={() => goToMessenger("cat")} 
                 className='conversation-sidebar_contacts_card'>
                 <FontAwesomeIcon 
@@ -35,6 +36,7 @@ function Contacts(props){
 
         let contactCard = 
             <div 
+                key={contact.id}
                 onClick={() => goToMessenger(contact.id)} 
                 className='conversation-sidebar_contacts_card'>
                 <FontAwesomeIcon 

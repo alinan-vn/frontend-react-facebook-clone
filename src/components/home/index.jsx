@@ -1,5 +1,7 @@
 import React from 'react';
 
+import PeopleYouMayKnow from './peopleYouMayKnow';
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { 
     faCirclePlus,
@@ -87,9 +89,9 @@ class Home extends React.Component {
                     <p className='home-fcus_people-you-may-know_text'>
                         People you may know
                     </p>
-                    <div className='home-fcus_people-you-may-know_cards'>
-                        Cards (will be implemented later)
-                    </div>
+                    
+                    <PeopleYouMayKnow />
+
                 </div>
 
                 <div className='home-fcus_feed'>
