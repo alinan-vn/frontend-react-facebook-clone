@@ -42,6 +42,10 @@
 
 # Tour
 ### Immediate landing page view
+- Left Sidebar with different potential features
+- Center component with frontend potential features: Create Story, Create Post, People you may know, etc
+- Right Sidebar with Contacts list that can be clicked on which will redirect user to a frontend Messenger feature
+
 ![Home](./images_for_README/home-1.PNG)
 
 <br /><hr /><br />
