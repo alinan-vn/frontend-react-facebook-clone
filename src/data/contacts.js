@@ -7,8 +7,8 @@ export const contacts = [
     }, 
     {
         id: 2,
-        firstName: "Mandy",
-        lastName: "Muse",
+        firstName: "Amanda",
+        lastName: "Moose",
         gender: "female"
     }, 
     {
